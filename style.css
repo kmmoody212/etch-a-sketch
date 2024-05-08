@@ -7,16 +7,18 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
-  border: 75px solid white;
-  width: 482px;
+  margin-top: 24px;
+  border: 30px solid white;
+  border-left: 50px solid white;
+  border-right: 50px solid white;
+  width: 500px;
+  height: 500px;
   padding: 0px;
   justify-content: center;
 }
 .square {
   display: flex;
   cursor: pointer;
-  width: 30px;
-  height: 30px;
   border: 0.5px solid;
   box-sizing: border-box;
   background-color: white;
@@ -28,6 +30,7 @@ body {
 }
 
 h1 {
+  margin: 0;
   display: flex;
   justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
@@ -37,4 +40,55 @@ h1 {
   text-shadow: 0 0 7px rgb(184, 166, 0), 0 0 10px rgb(184, 166, 0),
     0 0 21px rgb(184, 166, 0);
   font-style: italic;
+}
+
+#buttons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 550px;
+  margin: auto;
+}
+
+.colorBtn {
+  margin: 24px;
+  background: white;
+  border: 2px solid white;
+  color: rgb(171, 17, 17);
+  border-radius: 20px;
+  width: fit-content;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.blackBtn {
+  margin: 24px;
+  background: white;
+  border: 2px solid white;
+  color: rgb(171, 17, 17);
+  border-radius: 20px;
+  width: fit-content;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.resetBtn {
+  margin: 24px;
+  background: white;
+  border: 2px solid white;
+  color: rgb(171, 17, 17);
+  border-radius: 20px;
+  width: fit-content;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.changeSize {
+  margin: 24px;
+  background: white;
+  border: 2px solid white;
+  color: rgb(171, 17, 17);
+  border-radius: 20px;
+  width: fit-content;
+  font-weight: 600;
+  font-size: 18px;
 }
