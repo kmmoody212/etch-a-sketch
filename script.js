@@ -37,11 +37,12 @@ makeGrid(16); //sets a nice default grid 16 for first time when loading the page
 const btn = document.querySelector(".changeSize");
 btn.addEventListener("click", () => {
   let reset = prompt("Please pick a number between 0 and 100", "16"); //sets input of the user to a variable called reset
-
+  if (reset === null) {
+    return;
+  }
   while (reset > 100 || reset < 0) {
     reset = prompt("You must pick a number between 0 and 100! TRY AGAIN", "16");
   }
-
   makeGrid(reset);
 });
 
